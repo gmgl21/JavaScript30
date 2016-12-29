@@ -1,0 +1,46 @@
+html{
+	background:url("https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=7c2249fa20b4127b91b1e87c4508c57e");
+	background-size:cover;
+	font-family:sans-serif;
+	text-align:center;
+	font-size:10px;
+}
+
+body{
+	font-size:2rem;
+	display:flex;
+	flex:1;
+	min-height:100vh;
+	align-items:center;
+}
+
+.clock{
+    width:30rem;
+    height:30rem;
+    border:30px solid rgba(10, 10, 10, 0.51);
+	border-radius:50%;
+	margin: 50px auto;
+	position:relative;
+	padding:2rem;
+
+	
+}
+
+.clock-face{
+	position:relative;
+	width:100%;
+	height:100%;
+	transform:translateY(-3px);/* for the height of the clock hands*/
+}
+
+.hand{
+	width:50%;
+	height:6px;
+	background:black;
+	position:absolute;
+	top:50%;
+	transform-origin: 100%;
+	transform:rotate(90deg);
+	transition:all 0.05s;
+	transition-timing-fuction:cubic-bezier(0.1, 2.7, 0.58, 1);
+}	
